@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="getElementById">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Գլխավոր - Նորություններ</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="logo.png" alt="Լոգո">
+        <span>NewsLine</span>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html" class="active">Գլխավոր</a>
+        <a href="about.html">Մեր մասին</a>
+        <a href="contact.html">Կապ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Բարի գալուստ NewsLine կայք</h1>
+      <p>Ամենաթարմ նորությունները՝ մեկ հարթակում </p>
+    </section>
+
+    <section class="news-grid">
+      <article class="news-card">
+        <img src="https://picsum.photos/seed/1/600/400" alt="">
+        <div class="card-content">
+          <h3>Տնտեսական աճը նոր մակարդակի վրա</h3>
+          <p>Հայաստանի տնտեսությունը շարունակում է զարգանալ՝ ցուցադրելով կայուն աճ վերջին ամիսներին։</p>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <img src="https://picsum.photos/seed/2/600/400" alt="">
+        <div class="card-content">
+          <h3>Նոր տեխնոլոգիաներ կրթության ոլորտում</h3>
+          <p>Դպրոցներն ու բուհերը անցնում են թվային կրթական միջավայրերի՝ ուսուցումը դարձնելով առավել ինտերակտիվ։</p>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <img src="https://picsum.photos/seed/3/600/400" alt="">
+        <div class="card-content">
+          <h3>Կանաչ էներգիայի ներդրումներ</h3>
+          <p>Արևային էներգիայի նախագծերը դառնում են առաջնային՝ խթանելով էկոլոգիական կայուն զարգացումը։</p>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <img src="https://picsum.photos/seed/4/600/400" alt="">
+        <div class="card-content">
+          <h3>Ստարտափների համաժողով Երևանում</h3>
+          <p>Տասնյակ նորաստեղծ ընկերություններ ներկայացրեցին իրենց գաղափարները միջազգային ներդրողներին։</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> NewsLine — Բոլոր իրավունքները պաշտպանված են</p>
+      <nav class="footer-nav">
+        <a href="about.html">Մեր մասին</a>
+        <a href="contact.html">Կապ</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
