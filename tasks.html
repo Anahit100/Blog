@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Օրինակներ</title>
+</head>
+<body>
+  <h1>JavaScript ֆունկցիաների արդյունքներ</h1>
+  <p>Բացիր Console (Ctrl+Shift+I կամ F12), որպեսզի տեսնես արդյունքները։</p>
+  <script src="tasks.js"></script>
+
+  <script>
+    console.log("1. Կլորացում:", roundToTwo(3.14159));
+    console.log("2. Թիվ է:", isNumber(123));
+    console.log("3. Թվի երկարությունը:", numberLength(12345));
+    console.log("4. Թվի ամբողջ մասը:", getIntegerPart(45.78));
+    console.log("5. Մեծատառ տեքստ:", toUpperCase("barev"));
+    console.log("6. Պարունակում է բառը:", containsWord("barev dzez", "dzez"));
+    console.log("7. Փոխարինված բացատներ:", replaceSpaces("barev  ashxarh"));
+    console.log("8. Առաջին և վերջին 3:", firstAndLastThree("JavaScript"));
+    console.log("9. Հեռացված բացատներ:", trimString("  hello  "));
+    console.log("10. Տեքստի երկարություն:", stringLength("barev"));
+
+    const arr = [5, 12, 8, 130, 44];
+    console.log("11. Ավելացնել էլեմենտ:", addElement([...arr], 99));
+    console.log("12. Հեռացնել վերջինը:", removeLastElement([...arr]));
+    console.log("13. Առաջին մեծ >10 ինդեքսը:", findFirstGreaterThanTen(arr));
+    console.log("14. Զույգ թվեր:", filterEvenNumbers(arr));
+    console.log("15. Բազմապատկած 2-ով:", multiplyByTwo(arr));
+    console.log("16. Գումար:", sumArray(arr));
+    console.log("17. Պարունակում է 130:", containsElement(arr, 130));
+    console.log("18. Միացում:", mergeArrays([1,2], [3,4]));
+    console.log("19. Slice (1-ից մինչև 3):", sliceArray(arr));
+    console.log("20. Աճման կարգով:", sortAscending([3,1,4,2]));
+
+    const obj = {a: 1, b: 2, c: 3};
+    console.log("21. Բանալիներ:", getObjectKeys(obj));
+    console.log("22. Արժեքներ:", getObjectValues(obj));
+    console.log("23. Պարունակում է բանալի 'b':", hasKey(obj, "b"));
+    console.log("24. Միացրած օբյեկտներ:", mergeObjects(obj, {d: 4, e: 5}));
+    console.log("25. [Բանալի, Արժեք] զույգեր:", getEntries(obj));
+  </script>
+</body>
+</html>
